@@ -231,6 +231,35 @@
   .contact-card .field .val{ font-size:0.95rem; color:var(--brass-bright); word-break:break-word; }
   .placeholder-flag{ font-family:var(--mono); font-size:0.66rem; color:var(--brick-bright); margin-top:4px; display:block; }
 
+  /* support / fundraiser + social */
+  .support-grid{ display:grid; grid-template-columns:1.2fr 0.8fr; gap:28px; }
+  .fund-card, .social-card{
+    background:var(--paper); color:var(--charcoal);
+    border-radius:3px; padding:32px;
+  }
+  .fund-card .tag, .social-card .tag{
+    font-family:var(--mono); font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase;
+    color:#7a6a3d; margin-bottom:14px; display:block;
+  }
+  .fund-card h3{ font-family:var(--serif); font-size:1.35rem; margin-bottom:12px; color:var(--charcoal); }
+  .fund-card p, .social-card p{ color:#3b3526; font-size:0.95rem; margin-bottom:20px; }
+  .social-card{ display:flex; flex-direction:column; }
+  .social-links{ display:grid; gap:10px; margin-bottom:10px; }
+  .social-link{
+    display:flex; align-items:center; gap:12px;
+    font-family:var(--mono); font-size:0.85rem; color:var(--charcoal);
+    padding:10px 14px; border:1px solid #a89a6d; border-radius:3px;
+    transition:background .2s, border-color .2s;
+  }
+  .social-link:hover{ background:rgba(156,59,46,0.08); border-color:var(--brick); }
+  .social-icon{
+    width:22px; height:22px; border-radius:50%; background:var(--charcoal); color:var(--paper);
+    display:flex; align-items:center; justify-content:center; font-size:0.75rem; flex-shrink:0;
+  }
+  @media (max-width:860px){
+    .support-grid{ grid-template-columns:1fr; }
+  }
+
   /* disclaimer */
   .disclaimer{ border-top:1px solid var(--line); padding:40px 0; }
   .disclaimer p{ font-size:0.85rem; color:var(--ash-dim); max-width:80ch; }
@@ -454,6 +483,44 @@
           <label>Next meeting</label>
           <div class="val">Details to follow</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section id="support">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Support the campaign</span>
+      <h2>Help us fight this properly</h2>
+      <p>Opposing a project of this scale takes real resources — printing, legal advice, and getting the word out to every household in the area. Here's how to help, and where to follow along.</p>
+    </div>
+
+    <div class="support-grid" data-reveal>
+      <div class="fund-card">
+        <span class="tag">Fundraiser</span>
+        <h3>Rathoe Community against a Hydrogen power facility</h3>
+        <p>We've launched a GoFundMe to cover posters, information brochures for local households, and legal advice as we prepare our case. Every donation helps a small volunteer group compete with a €2 billion developer.</p>
+        <a href="https://www.gofundme.com/f/rathoe-community-against-a-hydrogen-power-facility" class="btn btn-primary" target="_blank" rel="noopener">Donate on GoFundMe →</a>
+      </div>
+
+      <div class="social-card">
+        <span class="tag">Follow along</span>
+        <p>Updates, meeting notices, and ways to get involved will be posted here as they happen.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">f</span> Facebook
+          </a>
+          <a href="#" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">𝕏</span> Twitter / X
+          </a>
+          <a href="#" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">◎</span> Instagram
+          </a>
+        </div>
+        <span class="placeholder-flag">Social links are placeholders — swap in the real profile URLs once the accounts are live.</span>
       </div>
     </div>
   </div>
