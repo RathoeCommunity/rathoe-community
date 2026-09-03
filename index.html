@@ -150,6 +150,30 @@
   .stat b{ display:block; font-family:var(--serif); font-size:1.9rem; color:var(--brass-bright); font-weight:600; }
   .stat span{ font-family:var(--mono); font-size:0.72rem; color:var(--ash-dim); letter-spacing:0.03em; text-transform:uppercase; line-height:1.4; display:block; margin-top:4px; }
 
+  /* ===== VIDEO / FOOTAGE ===== */
+  .video-frame{
+    position:relative;
+    border-radius:3px;
+    overflow:hidden;
+    border:1px solid var(--line-strong);
+    background:var(--ink-bg-deep);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.5);
+  }
+  .video-frame iframe{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    background:#000;
+    border:0;
+  }
+  .video-caption{
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--ash-dim);
+    margin-top:16px;
+    max-width:70ch;
+  }
+
   /* ===== SECTIONS ===== */
   section{ padding:92px 0; position:relative; }
   .section-head{ max-width:640px; margin-bottom:52px; }
@@ -313,6 +337,7 @@
       </div>
     </div>
     <div class="nav-links">
+      <a href="#footage">Watch: Drone Footage</a>
       <a href="#project">The Project</a>
       <a href="#exhibits">Evidence</a>
       <a href="#action">Take Action</a>
@@ -361,6 +386,22 @@
     <div class="stat"><b>5–7 yrs</b><span>Estimated construction period, with a peak workforce of up to 1,500</span></div>
   </div>
 </div>
+
+<section id="footage">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">See it for yourself</span>
+      <h2>Rathoe from above — and what's proposed beside it</h2>
+      <p>Drone footage of the village and surrounding land, including a look at the scale of what's been proposed right beside it.</p>
+    </div>
+    <div class="video-frame" data-reveal>
+      <iframe src="https://www.youtube.com/embed/Fo-cuYlu8pg" title="Rathoe drone footage" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="video-caption">Filmed over Rathoe village and the proposed site.</p>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
 
 <section id="project">
   <div class="wrap">
@@ -498,7 +539,7 @@
         </div>
         <div class="field">
           <label>Next meeting</label>
-          <div class="val">7pm, Thursday 27th of August, Tullow Parish Centre</div>
+          <div class="val">7pm 10th of August, Rathoe Hall</div>
         </div>
       </div>
     </div>
